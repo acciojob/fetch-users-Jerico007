@@ -33,7 +33,7 @@ const Users = () => {
                     <tbody>
 
                         {
-                            !data ? <th>No data found</th> : 
+                            !data ? <th>No data found to display.</th> : 
                                 
                                     data.map((val)=>(
                                         <tr key={val.id}>
