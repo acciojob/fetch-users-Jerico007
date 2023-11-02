@@ -19,7 +19,7 @@ const Users = () => {
         <div className='Users'>
             <div className='Navbar'>
                 <h1>Blue Whales</h1>
-                <button onClick={()=>(fetchData())}>Get User list</button>
+                <button className='btn' onClick={()=>(fetchData())}>Get User list</button>
             </div>
             <div className='Table'>
                 
@@ -33,7 +33,7 @@ const Users = () => {
                     <tbody>
 
                         {
-                            !data ? <th>No data found to display</th> : 
+                            !data ? <th>No data found</th> : 
                                 
                                     data.map((val)=>(
                                         <tr key={val.id}>
